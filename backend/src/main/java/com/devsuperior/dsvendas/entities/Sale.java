@@ -33,7 +33,7 @@ public class Sale {
 
 	public Sale(Long id, Integer visted, Integer deals, Double amount, LocalDate date, Seller seller) {
 		this.id = id;
-		this.visted = visted;
+		this.visited = visted;
 		this.deals = deals;
 		this.amount = amount;
 		this.date = date;
@@ -49,11 +49,11 @@ public class Sale {
 	}
 
 	public Integer getVisted() {
-		return visted;
+		return visited;
 	}
 
 	public void setVisted(Integer visted) {
-		this.visted = visted;
+		this.visited = visted;
 	}
 
 	public Integer getDeals() {
