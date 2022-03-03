@@ -1,6 +1,7 @@
 package com.devsuperior.dsvendas.service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,6 +17,6 @@ public class SellerService {
 	
 	public List<SellerDTO> findAll() {
 		List<Seller> result = repository.findAll();
-		return result.stream().map(x -> new SellerDTO(x)).collect(colectors.toList());
+		return result.stream().map(x -> new SellerDTO(x)).collect(Collectors.toList());
 	}
 }

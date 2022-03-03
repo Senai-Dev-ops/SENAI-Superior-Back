@@ -10,12 +10,16 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.devsuperior.dsvendas.entities.Sale;
 import com.devsuperior.dsvendas.repositories.SaleRepository;
+import com.devsuperior.dsvendas.repositories.SellerRepository;
 
 @Service
 public class SaleService {
 
 	@Autowired
 	private SaleRepository repository;
+	
+	@Autowired
+	private SellerRepository sellerRepository;
 	
 	
 	@Transactional(readOnly = true)
