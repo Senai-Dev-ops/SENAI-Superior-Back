@@ -6,6 +6,6 @@ import com.devsuperior.dsvendas.entities.Seller;
 
 public interface SaleRepository extends JpaRepository<Seller, Long> {
 	
-	
+	 
 
 }

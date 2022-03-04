@@ -1,0 +1,5 @@
+"testando docker com spring boot"
+
+"link do video https://www.youtube.com/watch?v=5QGexrfqu60"
+
+"comando 'mvn clean package'"
