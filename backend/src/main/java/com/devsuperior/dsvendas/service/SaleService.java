@@ -8,6 +8,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.devsuperior.dsvendas.DTO.AllSumDTO;
 import com.devsuperior.dsvendas.DTO.SaleDTO;
 import com.devsuperior.dsvendas.DTO.SaleSuccessDTO;
 import com.devsuperior.dsvendas.DTO.SaleSumDTO;
@@ -40,5 +41,11 @@ public class SaleService {
 	@Transactional(readOnly = true)
 	public List<SaleSuccessDTO> successGroupedBySeller() {
 		return repository.successGroupedBySeller();
+	}
+	
+	@Transactional(readOnly = true)
+	public List<AllSumDTO> allsSum() {
+		return repository.allsSum();
+		
 	}
 }
